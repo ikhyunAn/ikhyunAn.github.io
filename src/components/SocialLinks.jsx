@@ -73,7 +73,7 @@ const SocialLinks = () => {
             </a>
           );
         })}
-      {userData.blog && (
+      {/* {userData.blog && (
         <a
           href={userData.blog}
           aria-label="External link"
@@ -81,7 +81,7 @@ const SocialLinks = () => {
         >
           {Blog ? Blog : <Icon icon="ph:link-bold" />}
         </a>
-      )}
+      )} */}
     </StyledSocialLinks>
   );
 };
