@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
+import Logo from "../images/ikhyun_headshot.jpeg";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
@@ -71,6 +71,28 @@ const StyledHero = styled.header`
     }
   }
 
+    /* Circular hero image wrapper */
+    .hero-circle {
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.4rem solid rgba(255,255,255,0.25);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .hero-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
   @media screen and (min-width: 1180px) {
     &::before {
       background: ${({ theme }) =>
@@ -113,12 +135,18 @@ const Hero = ({ name }) => {
               <SocialLinks />
             </div>
           </Col>
-          <Col className="d-none d-md-block">
+          {/* Image frame: Square or circle? */}
+          {/* <Col className="d-none d-md-block">
             <img
               src={Logo}
-              alt="React Logo"
+              alt="Headshot Logo"
               className="w-75 mx-auto hero-img"
             />
+          </Col> */}
+          <Col className="d-none d-md-block">
+              <div className="hero-circle">
+                <img src={Logo} alt="Hero" className="hero-img" />
+              </div>
           </Col>
         </Row>
         <Row className="align-items-end down-container">

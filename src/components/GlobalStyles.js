@@ -39,7 +39,7 @@ a:hover {
 }
 
 .title {
-  font-family: "Permanent Marker";
+  font-family: "Google Sans Code";
 }
 
 .link-icons {
