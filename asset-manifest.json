@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.dfcff7f1.css",
-    "main.js": "/homepage/static/js/main.c6ddaf8f.js",
-    "static/media/hero-dark.jpg": "/homepage/static/media/hero-dark.37f2556d620821979e99.jpg",
-    "static/media/hero-light.jpg": "/homepage/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
-    "static/media/ikhyun_headshot.jpeg": "/homepage/static/media/ikhyun_headshot.237472fddb71ea26b9af.jpeg",
-    "service-worker.js": "/homepage/service-worker.js",
-    "static/media/GH.svg": "/homepage/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
-    "static/media/defaultNavLogo.svg": "/homepage/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/logo.svg": "/homepage/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/homepage/index.html",
-    "main.dfcff7f1.css.map": "/homepage/static/css/main.dfcff7f1.css.map",
-    "main.c6ddaf8f.js.map": "/homepage/static/js/main.c6ddaf8f.js.map"
+    "main.css": "/home/static/css/main.dfcff7f1.css",
+    "main.js": "/home/static/js/main.60d40f1b.js",
+    "static/media/hero-dark.jpg": "/home/static/media/hero-dark.37f2556d620821979e99.jpg",
+    "static/media/hero-light.jpg": "/home/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
+    "static/media/ikhyun_headshot.jpeg": "/home/static/media/ikhyun_headshot.237472fddb71ea26b9af.jpeg",
+    "service-worker.js": "/home/service-worker.js",
+    "static/media/GH.svg": "/home/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
+    "static/media/defaultNavLogo.svg": "/home/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/home/index.html",
+    "main.dfcff7f1.css.map": "/home/static/css/main.dfcff7f1.css.map",
+    "main.60d40f1b.js.map": "/home/static/js/main.60d40f1b.js.map"
   },
   "entrypoints": [
     "static/css/main.dfcff7f1.css",
-    "static/js/main.c6ddaf8f.js"
+    "static/js/main.60d40f1b.js"
   ]
 }
