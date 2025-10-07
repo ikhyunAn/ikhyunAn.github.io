@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.dfcff7f1.css",
+    "main.js": "/my-app/static/js/main.0406b6fe.js",
+    "static/media/hero-dark.jpg": "/my-app/static/media/hero-dark.37f2556d620821979e99.jpg",
+    "static/media/hero-light.jpg": "/my-app/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
+    "static/media/ikhyun_headshot.jpeg": "/my-app/static/media/ikhyun_headshot.237472fddb71ea26b9af.jpeg",
+    "service-worker.js": "/my-app/service-worker.js",
+    "static/media/GH.svg": "/my-app/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
+    "static/media/defaultNavLogo.svg": "/my-app/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/my-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/my-app/index.html",
+    "main.dfcff7f1.css.map": "/my-app/static/css/main.dfcff7f1.css.map",
+    "main.0406b6fe.js.map": "/my-app/static/js/main.0406b6fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfcff7f1.css",
+    "static/js/main.0406b6fe.js"
+  ]
+}
