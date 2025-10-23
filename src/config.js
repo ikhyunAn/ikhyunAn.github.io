@@ -9,7 +9,8 @@ import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/zamong.jpg";
+import zamong_Logo from "./images/zamong.jpg";
+import mcp_Logo from "./images/mcp.png";
 
 /* START HERE
  **************************************************************
@@ -116,13 +117,17 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["zamong_texteditor", "example-2", "example-3"];
+export const filteredProjects = ["zamong_texteditor", "MCP_InvestmentPortfolio", "example-3"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
     name: "zamong_texteditor",
-    image: Logo,
+    image: zamong_Logo,
+  },
+  {
+    name: "MCP_InvestmentPortfolio",
+    image: mcp_Logo,
   },
 ];
 
