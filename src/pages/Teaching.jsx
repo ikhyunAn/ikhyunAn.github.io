@@ -16,10 +16,12 @@ const Teaching = () => {
           {teaching.map((item) => (
             <section key={item.id}>
               <h2>{item.institution}</h2>
-              <p>{item.role}</p>
+              <p><em>Position: {item.role}</em></p>
+              {/* {item.period && <p>Period: {item.period}</p>} */}
               <ul>
                 {item.courses.map((course) => (
-                  <li key={course}>{course}</li>
+                  <li key={course}>{course}
+                  {item.period && <p>{item.period}</p>}</li>
                 ))}
               </ul>
             </section>

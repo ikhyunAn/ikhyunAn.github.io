@@ -197,7 +197,7 @@ h3 { font-size: 1.15rem; }
 }
 
 .page-header > :last-child { margin-bottom: 0; }
-.intro-copy { font-size: 1.08rem; }
+.intro-copy { font-size: 1.08rem; line-height: 1.5; }
 .content-section { margin-top: 3rem; }
 
 .section-title {

@@ -8,13 +8,14 @@ export const profile = {
   avatar: headshot,
   avatarAlt: "Portrait of Ikhyun An",
   bioParagraphs: [
-    "I am a master's student in Computer Science at Georgia Tech, focused on systesm for artificial intelligence and machine learning.",
+    "I am a master's student in Computer Science at Georgia Tech, focused on systems for artificial intelligence and machine learning. I've specialized in Systems Concentration in the Compute Science major.",
     "I enjoy building practical systems that turn research ideas into useful tools.",
   ],
   researchInterests: ["AI/ML systems", "RL Infra", "and Compilers"],
   links: [
     { label: "GitHub", url: "https://github.com/ikhyunAn" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/ikhyun-an/" },
+    { label: "Orcid", url: "https://orcid.org/0009-0003-2851-2147" },
   ],
   email: null,
   cvUrl: null,
@@ -25,9 +26,9 @@ export const profile = {
 export const news = [
   {
     id: "2026-jobsearch",
-    date: "NA",
+    date: "Announcement:",
     text: "Looking for entry-level FTE positions with start date in Jan-Feb 2027!",
-    url: "https:google.com",
+    url: null,
   },
   {
     id: "2026-grad",
@@ -84,6 +85,7 @@ export const teaching = [
     id: "aos",
     institution: "Georgia Institute of Technology",
     role: "Graduate Teaching Assistant",
+    period: "Spring 2026, Fall 2026",
     courses: ["CS 6210: Advanced Operating Systems"],
   },
 ];
