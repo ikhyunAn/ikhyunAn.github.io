@@ -1,43 +1,53 @@
 import React from "react";
-// State
-import { useGetUsersQuery } from "../app/apiSlice";
-// Components
-import Hero from "../components/Hero";
-import AboutMe from "../components/AboutMe";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import BackToTop from "../components/BackToTop";
-// Config
-import { filteredProjects, moreInfo } from "../config";
-// Utils
-import { updateTitle } from "../utils";
+import { Link } from "react-router-dom";
+import AchievementTimeline from "../components/AchievementTimeline";
+import NewsList from "../components/NewsList";
+import { achievements, news, profile, projects, siteMeta } from "../content/site";
 
-// #region component
 const Home = () => {
-  const { data: userData } = useGetUsersQuery();
-
   React.useEffect(() => {
-    updateTitle(`${userData.name} | Portfolio`);
-  }, [userData]);
+    document.title = siteMeta.title;
+  }, []);
 
   return (
-    <>
-      <Hero name={userData.name} />
-      <main>
-        <AboutMe
-          avatar_url={userData.avatar_url}
-          bio={userData.bio}
-          moreInfo={moreInfo}
-        />
-        <Skills />
-        <Projects filteredProjects={filteredProjects} />
-        <Contact />
-      </main>
-      <BackToTop />
-    </>
+    <article>
+      <header className="page-header">
+        <h1>Hi, I’m Ikhyun.</h1>
+      </header>
+      <div className="intro-copy">
+        {profile.bioParagraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+        {profile.researchInterests.length > 0 && (
+          <p>
+            My current interests include {profile.researchInterests.join(", ")}.
+          </p>
+        )}
+      </div>
+
+      <NewsList items={news} />
+      <AchievementTimeline items={achievements} />
+
+      {projects.length > 0 && (
+        <section className="content-section" aria-labelledby="selected-work-heading">
+          <div className="section-heading-row">
+            <h2 id="selected-work-heading" className="section-title">
+              Selected work
+            </h2>
+            <Link to="/portfolio">View portfolio</Link>
+          </div>
+          <ul className="selected-work-list">
+            {projects.slice(0, 2).map((project) => (
+              <li key={project.id}>
+                <h3>{project.title}</h3>
+                <p>{project.summary}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </article>
   );
 };
-// #endregion
 
 export default Home;
